@@ -35,13 +35,14 @@ func TestManifest(t *testing.T) {
 	if _, err := m.Runtime.WebIngress.Prefixes(); err != nil {
 		t.Errorf("the ranges by the system's rules: %v", err)
 	}
-	if m.Description["de"] == "" || m.Description["en"] == "" || m.Runtime.Note["de"] == "" || m.Runtime.Note["en"] == "" {
-		t.Error("the description and the note in both languages")
+	if m.Description["de"] == "" || m.Description["en"] == "" || m.Runtime.Technical["de"] == "" || m.Runtime.Technical["en"] == "" ||
+		m.Runtime.Note["de"] == "" || m.Runtime.Note["en"] == "" {
+		t.Error("the description, the note and the technical text in both languages")
 	}
-	// the note is the catalogue's text for users (occulited task 188), no longer the technical account
-	// of scopes, ports and contacts; those are the manifest's keys
-	if !strings.Contains(m.Runtime.Note["en"], "Headscale") {
-		t.Error("the note does not name Headscale")
+	for _, want := range []string{"Headscale", "100.64.0.0/10", "No logs", "Connect"} {
+		if !strings.Contains(m.Runtime.Technical["en"], want) {
+			t.Errorf("the technical text does not say %q", want)
+		}
 	}
 	if m.Requires.Lite != "1.1.0-dev.6" {
 		t.Errorf("requires.lite %q: the ingress needs 1.1.0-dev.6 or newer (the first build with it)", m.Requires.Lite)

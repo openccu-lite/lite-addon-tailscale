@@ -104,6 +104,8 @@ github.com/hdevalence/ed25519consensus v0.2.0 h1:37ICyZqdyj0lAZ8P4D1d1id3HqbbG1N
 github.com/hdevalence/ed25519consensus v0.2.0/go.mod h1:w3BHWjwJbFU29IRHL1Iqkw3sus+7FctEyM4RqDxYNzo=
 github.com/hobbyquaker/ccu-addon-kit/go v0.0.0-20261030124810-f09ba9aa6d44 h1:zMh+NbWPOMQiUHwGET2sTuZOzroVaHL9mPg6TQ/cpD8=
 github.com/hobbyquaker/ccu-addon-kit/go v0.0.0-20261030124810-f09ba9aa6d44/go.mod h1:IShVNKzAsWAa9IkyYUP/iXwaG1DoxoEGbgODw1XeCTE=
+github.com/hobbyquaker/ccu-addon-kit/go v0.0.0-20261125220423-1f064ae6e9c8 h1:gGRNxlop5aFG2A0L+1xY/OtOrMq7mYLU5lLped/UGHo=
+github.com/hobbyquaker/ccu-addon-kit/go v0.0.0-20261125220423-1f064ae6e9c8/go.mod h1:IShVNKzAsWAa9IkyYUP/iXwaG1DoxoEGbgODw1XeCTE=
 github.com/huin/goupnp v1.3.0 h1:UvLUlWDNpoUdYzb2TCn+MuTWtcjXKSza2n6CBdQ0xXc=
 github.com/huin/goupnp v1.3.0/go.mod h1:gnGPsThkYa7bFi/KWmEysQRf48l2dvR5bxr2OFckNX8=
 github.com/illarion/gonotify/v3 v3.0.2 h1:O7S6vcopHexutmpObkeWsnzMJt/r1hONIEogeVNmJMk=
